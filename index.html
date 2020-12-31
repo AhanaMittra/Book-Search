@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Book Search</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Redressed&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="lib_gen.css">
+
+    <style media="screen">
+    .navbar-custom {
+          background-color: #a6a6a6;
+      }
+
+    .dropdown:hover .dropdown-menu {
+        display: block;
+        margin-top: 0; // remove the gap so it doesn't close`
+
+     }
+     .dropdown >  a:hover, .dropdown >  a:focus {
+                background-image:none !important;
+                  background-color:red;
+     }
+     .dropdown > a:hover, .dropdown >  a:focus {
+                background-color:red;
+     }
+    </style>
+
+  </head>
+
+  <body>
+    <div class="container">
+      <nav class="navbar navbar-custom">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="#">IN</a>
+          </div>
+          <div class="list">
+            <ul class="nav navbar-nav">
+                <li class="dropdown color">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">FORUM <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Sitemap</a></li>
+                    <li><a href="#">Error Report</a></li>
+                  </ul>
+                </li>
+
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">DOWNLOAD <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Mirrors</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="#">Gen.lib.rus.ec</a></li>
+                  </ul>
+                </li>
+
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">UPLOAD<span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Upload Non-fiction Content</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="#">Upload fiction Content</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="#">Upload Scientific Content</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="#">(Login:password look at the forum sitemap)</a></li>
+                  </ul>
+                </li>
+
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">LAST<span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Last Added</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="#">Last modified</a></li>
+                    <li><a href="#">RSS</a></li>
+                    <li><a href="#">API</a></li>
+                  </ul>
+                </li>
+
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">OTHERS<span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Comics</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="#">Fictions</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="#">Magazines</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="#">Standarts</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="#">Full text search in LG Content</a></li>
+                  </ul>
+                </li>
+
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">TOPICS<span class="caret"></span></a>
+                </li>
+              </ul>
+          </div>
+        </nav>
+
+        <div class="body" align='center'>
+          <h1 id='title' align='center'>Library Genesis</h1>
+          <p align='center'>Please use new libgen.rs alias domain instead of libgen.is and libgen.st. Update your bookmarks!</p>
+          <a id='link1' href="#">Introducing Libgen desktop application!</a>
+          <p></p>
+          <a href="#">Letter of Solidarity</a>
+          <p></p>
+          <input type="search" name="" value="" id='search'>
+          <input type="submit" name="Submit" value="Submit">
+          <p></p>
+        </div>
+
+        <div class='body2'>
+          <h4><strong>Search in:</strong></h4>
+          <div>
+            <a href="#"><input type="radio" name="" value=""> LibGen (Sci-Tech)</a>
+            <a href="#"><input type="radio" name="" value=""> Scientific Articles</a>
+            <a href="#"><input type="radio" name="" value=""> Fiction</a>
+          </div>
+          <div>
+            <a href="#"><input type="radio" name="" value=""> Comics</a>
+            <a href="#"><input type="radio" name="" value=""> Standards</a>
+            <a href="#"><input type="radio" name="" value=""> Magazines</a>
+          </div>
+          <p></p>
+
+          <p>LibGen search opions:</p>
+          <label for="">Download type:</label>
+          <select name="">
+            <option value="">Resumed dl with original filename</option>
+            <option value="">Resumed dl with translit filename</option>
+            <option value="">Resumed dl with md5 filename</option>
+            <option value="">Open in browser</option>
+          </select>
+          <p></p>
+
+          <label>View Results:</label>
+          <span><input type="radio" name="" value="">  Simple</span>
+          <span><input type="radio" name="" value="">  Detailed</span>
+          <p></p>
+
+          <label for="">Result per page:</label>
+          <select name="">
+            <option value="">25</option>
+            <option value="">50</option>
+            <option value="">100</option>
+          </select>
+          <p></p>
+
+          <label>Search with marks(word*):</label>
+          <span><input type="radio" name="" value="">  No</span>
+          <span><input type="radio" name="" value="">  Yes</span>
+          <p></p>
+
+          <label>Search in fields:</label>
+          <span><input type="radio" name="" value=""> The column set default</span>
+          <span><input type="radio" name="" value="">  Title</span>
+          <span><input type="radio" name="" value="">  Author(s)</span>
+          <span><input type="radio" name="" value="">  Series</span>
+          <p></p>
+          <p>
+          <span><input type="radio" name="" value="">  Publisher</span>
+          <span><input type="radio" name="" value="">  Year</span>
+          <span><input type="radio" name="" value="">  ISBN</span>
+          <span><input type="radio" name="" value="">  Language</span>
+          <span><input type="radio" name="" value="">  MD5</span>
+          <span><input type="radio" name="" value="">  Tags</span>
+          <span><input type="radio" name="" value=""> Extension</span>
+          </p>
+
+        </div>
+
+
+        <script
+          src="http://code.jquery.com/jquery-3.1.1.js"
+          integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
+          crossorigin="anonymous">
+        </script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    </div>
+  </body>
+</html>
