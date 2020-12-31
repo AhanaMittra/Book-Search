@@ -1,0 +1,15 @@
+h1{
+  font-family: 'Redressed', cursive;
+  color: red;
+}
+
+#search{
+  width: 40%;
+  border: 1px solid black;
+}
+
+.body2{
+  padding-left:  179px;
+  text-align: left;
+  align: center;
+}
